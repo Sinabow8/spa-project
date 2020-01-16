@@ -1,0 +1,25 @@
+.section-body img { width: 100%; }
+
+/*svg { position: relative; z-index: -1; }*/
+
+svg { position: fixed; left: 0; right: 0; top: 0px; bottom:0; }
+
+path:hover{ fill:green; stroke:white;
+}
+.modal-backdrop { display: none; }
+
+foreignObject { display: block; }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  margin-top: -10%;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+}
